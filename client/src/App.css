@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container */
+.signup-container {
+    width: 100%;
+    max-width: 500px; /* Default max width for larger screens */
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+/* Input styles */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    /* Tablets and small laptops */
+    .signup-container {
+        max-width: 400px; /* Narrower form on tablet-sized screens */
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile devices */
+    .signup-container {
+        max-width: 350px; /* Form becomes even narrower on small screens */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small mobile devices */
+    .signup-container {
+        max-width: 300px; /* Ensure the form doesn't take too much space */
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-logo {
+    width: 30%;
+}
+.min-h-screen.bg-gray-100 {
+    background: #d0e1ed;
+    padding: 50px;
+    border: 1px solid #acbae3;
+    border-radius: 20px;
+}
+.min-h-screen.bg-gray-100 {
+    background: #d0e1ed;
+    padding: 50px;
+    border: 1px solid hsl(225, 50%, 78%);
+    border-radius: 20px;
+}
